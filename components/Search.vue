@@ -1,6 +1,6 @@
 <template>
-    <div class="nav-scroller py-1 mb-2">
-        <div class="nav d-flex justify-content-between">
+    <div class="flex items-center justify-center h-screen">
+        <div class="nav d-flex justify-content-between w-3/6">
             <div class="p-8">
                 <div class="bg-white flex items-center rounded-full shadow-xl">
                     <input v-model="keyword" class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none" id="search" type="text" placeholder="Search" aria-label="Search">
@@ -11,10 +11,11 @@
                     </div>
                 </div>
             </div>
+             <div v-if="pokemonIsNotFound" class="justify-center" >
+                <div>Not found, Try again</div>
+            </div>
         </div>   
-        <div v-if="pokemonIsNotFound">
-            <div>Is Not found</div>
-        </div>        
+               
     </div>
 </template>
 
@@ -59,7 +60,7 @@ export default {
             }
         },
         redirectToPokemon(pokiname){
-           this.$router.push('/pokemon/'+pokiname); 
+           this.$router.push('/'+pokiname); 
         }
     },
     created() {
