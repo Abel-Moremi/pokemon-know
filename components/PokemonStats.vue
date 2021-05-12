@@ -1,6 +1,6 @@
 <template>
     <div class="max-w-sm rounded-sm overflow-hidden shadow-lg m-4 bg-white"> 
-        <div class="bg-cover hover:bg-gray">
+        <div class="bg-cover hover:bg-gray grid justify-center">
             <client-only>
                 <apexcharts type="radar" height="350" :options="chartOptions" :series="series"></apexcharts>
             </client-only>
