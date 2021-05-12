@@ -49,7 +49,6 @@ export default {
                 const abi = await this.$axios.get('https://pokeapi.co/api/v2/ability/'+abilitiesList[i])
                 abilities[abilitiesList[i]] = this.getAbilityEn(abi.data)
             }
-            console.log(abilities)
             return abilities
         },
         getPokemonAbilitiesNames(){
