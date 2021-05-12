@@ -47,7 +47,7 @@ export default {
             if(this.result === null){
                 this.result = {}
             }else{
-                axios.get("https://pokeapi.co/api/v2/pokemon/"+this.keyword)
+                axios.get("https://pokeapi.co/api/v2/pokemon/"+this.keyword.toLowerCase())
                 .then(res => 
                         (this.result = res.data,
                         this.pokemonIsNotFound = false,
