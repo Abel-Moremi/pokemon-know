@@ -3,6 +3,9 @@ export default {
   router: {
     base: '/pokemon-know/'
   },
+  generate: {
+    fallback: true
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'pokemon-know',
