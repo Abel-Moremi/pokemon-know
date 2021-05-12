@@ -1,6 +1,9 @@
 <template>
     <div class="flex items-center justify-center h-screen">
         <div class="nav d-flex justify-content-between w-3/6">
+            <div class="hero container max-w-screen-lg mx-auto pb-10 flex justify-center">
+                <img src="~/assets/images/pokemon-know.png" />
+            </div>
             <div class="p-8">
                 <div class="bg-white flex items-center rounded-full shadow-xl">
                     <input v-model="keyword" class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none" id="search" type="text" placeholder="Search" aria-label="Search">

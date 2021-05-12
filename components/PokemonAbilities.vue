@@ -1,26 +1,24 @@
 <template>
-    <div>
-        <div class="max-w-sm rounded-sm overflow-hidden shadow-lg m-16">
-            <div lass="mx-6 my-4 border-b border-gray-light content-center">
-                <div class="font-extrabold text-2xl text-gray-darker mb-4 text-center">abilities</div>
-            </div>
-            <div v-for="(value, index) in pokiAbilities" :key="index">
-                <div class="w-full md:full mx-auto p-4">
-                    <div class="shadow-md">
-                        <p class="text-center font-extrabold">{{ index }}</p>
-                        <div class="tab w-full overflow-hidden border-t">
-                            <input class="absolute opacity-0" :id="index" type="checkbox" name="tabs2">
-                            <label class="block p-5 leading-normal cursor-pointer" :for="index">EFFECT</label>
-                            <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
-                                <p class="p-5">{{ value.effect }}</p>
-                            </div>
+    <div class="max-w-sm rounded-sm overflow-hidden shadow-lg m-4 bg-white">
+        <div lass="mx-6 my-4 border-b border-gray-light content-center">
+            <div class="font-extrabold text-2xl text-gray-darker mb-4 text-center text-yellow-600">Abilities</div>
+        </div>
+        <div v-for="(value, index) in pokiAbilities" :key="index">
+            <div class="w-full md:full mx-auto p-4">
+                <div class="shadow-md">
+                    <p class="text-center font-bold uppercase">{{ index }}</p>
+                    <div class="tab w-full overflow-hidden border-t">
+                        <input class="absolute opacity-0" :id="index" type="checkbox" name="tabs2">
+                        <label class="block p-4 leading-normal cursor-pointer font-semibold" :for="index">effect</label>
+                        <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-blue-300 leading-normal">
+                            <p class="p-5">{{ value.effect }}</p>
                         </div>
-                        <div class="tab w-full overflow-hidden border-t">
-                            <input class="absolute opacity-0" :id="value.short_effect" type="checkbox" name="tabs2">
-                            <label class="block p-5 leading-normal cursor-pointer" :for="value.short_effect">SHORT-EFFECT</label>
-                            <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
-                                <p class="p-5">{{ value.short_effect }}</p>
-                            </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden border-t">
+                        <input class="absolute opacity-0" :id="value.short_effect" type="checkbox" name="tabs2">
+                        <label class="block p-4 leading-normal cursor-pointer font-semibold" :for="value.short_effect">short-effect</label>
+                        <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-blue-300 leading-normal">
+                            <p class="p-5">{{ value.short_effect }}</p>
                         </div>
                     </div>
                 </div>
@@ -91,9 +89,9 @@ export default {
     font-size: 1.25rem; /*.text-xl*/
     padding: 1.25rem; /*.p-5*/
     border-left-width: 2px; /*.border-l-2*/
-    border-color: #6574cd; /*.border-indigo*/
+    border-color: #90cdf4; /*.border-indigo*/
     background-color: #f8fafc; /*.bg-gray-100 */
-    color: #6574cd; /*.text-indigo*/
+    color: #90cdf4; /*.text-indigo*/
 }
 /* Icon */
 .tab label::after {
@@ -128,12 +126,12 @@ export default {
 /* Icon formatting - open */
 .tab input[type=checkbox]:checked + label::after {
     transform: rotate(315deg);
-    background-color: #6574cd; /*.bg-indigo*/
+    background-color: #90cdf4; /*.bg-indigo*/
     color: #f8fafc; /*.text-grey-lightest*/
 }
 .tab input[type=radio]:checked + label::after {
     transform: rotateX(180deg);
-    background-color: #6574cd; /*.bg-indigo*/
+    background-color: #90cdf4; /*.bg-indigo*/
     color: #f8fafc; /*.text-grey-lightest*/
 }
 </style>
