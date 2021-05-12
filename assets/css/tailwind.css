@@ -1,0 +1,15 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+    font-family: 'Pokemon';
+    font-weight: 100;
+    src: url('../fonts/Pokemon-Hollow.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pokemon';
+    font-weight: 100;
+    src: url('../fonts/Pokemon-Solid.ttf') format('truetype');
+}

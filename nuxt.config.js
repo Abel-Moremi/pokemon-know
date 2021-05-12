@@ -37,7 +37,13 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    'nuxt-purgecss'
   ],
+
+  purgeCSS: {
+    mode: 'postcss',
+    enabled: (process.env.NODE_ENV === 'production')
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},

@@ -4,12 +4,12 @@
             <img class="object-contain h-48 w-full " :src="pokiPics.front_default">
         </div>
         <div class="mx-6 my-4 border-b border-gray-light">
-            <div class="font-extrabold text-2xl text-gray-darker mb-4 capitalize">{{ pokemon.name }} #{{ pokemon.order }}</div>
-            <div class="font-semibold text-gray-dark text-sm mb-2">
+            <div class="font-normal text-2xl text-gray-darker mb-4 capitalize">{{ pokemon.name }} #{{ pokemon.order }}</div>
+            <div class="font-normal text-gray-dark text-sm mb-2">
                 <ul class="list-inside bg-rose-200">
                     <li><p>Base Experience: </p><p class="text-yellow-600 font-black">{{ pokemon.base_experience }}</p></li>
-                    <li><p>Height: </p><p class="text-yellow-600 font-black">{{ pokemon.height }}</p></li>
-                    <li><p>Weight: </p><p class="text-yellow-600 font-black">{{ pokemon.weight }}</p></li>
+                    <li><p>Height: </p><p class="text-yellow-600 font-normal">{{ pokemon.height }}</p></li>
+                    <li><p>Weight: </p><p class="text-yellow-600 font-normal">{{ pokemon.weight }}</p></li>
                 </ul>
             </div>
         </div>

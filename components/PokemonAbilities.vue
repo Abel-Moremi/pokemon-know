@@ -1,22 +1,22 @@
 <template>
     <div class="max-w-sm rounded-sm overflow-hidden shadow-lg m-4 bg-white">
         <div lass="mx-6 my-4 border-b border-gray-light content-center">
-            <div class="font-extrabold text-2xl text-gray-darker mb-4 text-center text-yellow-600">Abilities</div>
+            <div class="font-normal text-2xl mb-4 text-center text-yellow-600">Abilities</div>
         </div>
         <div v-for="(value, index) in pokiAbilities" :key="index">
             <div class="w-full md:full mx-auto p-4">
                 <div class="shadow-md">
-                    <p class="text-center font-bold uppercase">{{ index }}</p>
+                    <p class="text-center font-normal text-gray-600 uppercase">{{ index }}</p>
                     <div class="tab w-full overflow-hidden border-t">
                         <input class="absolute opacity-0" :id="index" type="checkbox" name="tabs2">
-                        <label class="block p-4 leading-normal cursor-pointer font-semibold" :for="index">effect</label>
+                        <label class="block p-4 leading-normal cursor-pointer font-normal" :for="index">effect</label>
                         <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-blue-300 leading-normal">
                             <p class="p-5">{{ value.effect }}</p>
                         </div>
                     </div>
                     <div class="tab w-full overflow-hidden border-t">
                         <input class="absolute opacity-0" :id="value.short_effect" type="checkbox" name="tabs2">
-                        <label class="block p-4 leading-normal cursor-pointer font-semibold" :for="value.short_effect">short-effect</label>
+                        <label class="block p-4 leading-normal cursor-pointer font-normal" :for="value.short_effect">short-effect</label>
                         <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-blue-300 leading-normal">
                             <p class="p-5">{{ value.short_effect }}</p>
                         </div>

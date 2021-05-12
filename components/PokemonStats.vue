@@ -6,10 +6,10 @@
             </client-only>
         </div>
         <div class="mx-6 my-4 border-b border-gray-light">
-            <div class="font-extrabold text-2xl text-gray-darker mb-4"></div>
-            <div class="font-semibold text-gray-dark text-sm mb-2">
-                <div class="flex justify-center items-center m-1 px-2 py-1 rounded-full text-base text-white font-medium" :class="pokemonTypeColor[pokemon.types[0].type.name]">
-                    <div class="flex-initial max-w-full leading-none text-lg font-semibold">{{ pokemon.types[0].type.name }}</div>
+            <div class="font-normal text-2xl text-gray-darker mb-4"></div>
+            <div class="font-normal text-gray-dark text-sm mb-2">
+                <div class="flex justify-center items-center m-1 px-2 py-2 rounded-full text-base text-white font-normal" :class="pokemonTypeColor[pokemon.types[0].type.name]">
+                    <div class="flex-initial max-w-full leading-none text-lg font-normal">{{ pokemon.types[0].type.name }}</div>
                 </div>
             </div>
         </div>
