@@ -112,3 +112,4 @@ Project Link: [Pokemon Know](https://github.com/abel-moremi/pokemon-know)
 * [Pokemon font](https://www.dafont.com/pokemon.font)
 * [ApexCharts](https://apexcharts.com/)
 * Also got stuck on [this](https://stackoverflow.com/questions/67479126/v-for-not-rendering-a-dictionary) bug but overcame it 😂😂 
+* [Pokemon Text Craft](https://textcraft.net/style/Textcraft/pokemon) used it to create logo, pretty cool
