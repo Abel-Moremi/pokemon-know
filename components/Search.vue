@@ -2,7 +2,7 @@
     <div class="flex items-center justify-center h-screen">
         <div class="nav d-flex justify-content-between w-3/6">
             <div class="hero container max-w-screen-lg mx-auto pb-10 flex justify-center">
-                <img src="~/assets/images/pokemon-know.png" />
+                <img class="object-contain md:object-scale-down " src="~/assets/images/pokemon-know.png" />
             </div>
             <div class="p-8">
                 <div class="bg-white flex items-center rounded-full shadow-xl">
