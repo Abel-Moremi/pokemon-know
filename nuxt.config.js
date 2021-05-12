@@ -1,4 +1,8 @@
 export default {
+  target: 'static',
+  router: {
+    base: '/pokemon-know/'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'pokemon-know',
