@@ -5,7 +5,7 @@
                 <img class="object-contain md:object-scale-down " src="~/assets/images/pokemon-know.png" />
             </div>
             <div class="p-8">
-                <div class="bg-white flex items-center rounded-full shadow-xl">
+                <div class="bg-white flex items-center rounded-full shadow-xl ">
                     <input v-model="keyword" class="rounded-l-full w-full py-4 px-8 h-8 text-gray-700 leading-tight focus:outline-none" id="search" type="text" placeholder="Search" aria-label="Search">
                     <div class="p-4">
                         <button v-on:click="getResult" class="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-12 h-12 flex items-center justify-center">
